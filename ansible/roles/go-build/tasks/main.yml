@@ -1,12 +1,12 @@
 - name: Install Golang
-  yum:
+  dnf:
     name:
       - golang
     state: latest
   become: true
   
 - name: Install selinux python bindings
-  yum:
+  dnf:
     name:
       - libselinux-python
     state: latest
