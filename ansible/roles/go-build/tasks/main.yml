@@ -23,7 +23,6 @@
     repo: "{{ repo_url }}"
     dest: "{{ ansible_env.HOME }}/go/src/{{ repo_name }}"
     version: "{{ repo_branch }}"
-    msg: "{{ repo_branch }}"
 
 - name: Download Dep (Golang package manager)
   get_url:
